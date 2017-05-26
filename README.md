@@ -29,6 +29,8 @@ Run Artisan command for publish config and views:
 ## Usage
 
  To get the panel view you must control invoking the `/ bar` url
+ 
+ ![alt text](https://drive.google.com/open?id=0B6RR9kH7u2diNW14YU5uZTlwelU)
 
 ## License
 
