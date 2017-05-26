@@ -1,0 +1,29 @@
+{
+    "name": "selkis/elastix",
+    "description": "The Elastix Call Center Protocol Revealed laravel",
+    "keywords": [
+        "Elastix",
+        "ECCP"
+    ],
+    "homepage": "https://github.com/Yessica54/VenId",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Selkis Soluciones",
+            "email": "servicios@selkis.com.ve",
+            "homepage": "http://selkis.com.ve"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Selkis\\Elastix\\": "src"
+        }
+    }
+}
