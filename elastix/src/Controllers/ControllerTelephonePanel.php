@@ -22,7 +22,11 @@ class ControllerTelephonePanel extends Controller
 		$this->phpAMI = new phpAMI($this->user,$this->pass,$this->host,$this->port);
 	}
 
-	public function getVista(Request $request){
+	public function prueba(Request $request){
+        return "hola";
+    }
+
+    public function getVista(Request $request){
 		return view('elastix::barra');
 	}
 

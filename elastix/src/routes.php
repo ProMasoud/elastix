@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
+Route::get('prueba', 'Selkis\Elastix\Controllers\ControllerTelephonePanel@prueba');
 Route::get('barra', 'Selkis\Elastix\Controllers\ControllerTelephonePanel@getVista');
 Route::get('status', 'Selkis\Elastix\Controllers\ControllerTelephonePanel@getIndex');
 Route::post('agentlogin', 'Selkis\Elastix\Controllers\ControllerTelephonePanel@agentlogin');

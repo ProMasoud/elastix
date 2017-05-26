@@ -29,8 +29,7 @@
           <a id="unbreak" href="#" onClick="unbreak();" class="btn btn-sm btn-info"><span class="glyphicon glyphicon-cutlery"></span> Volver de Almuerzo</a>
           <a id="hold" href="#" onClick="hold();" class="btn btn-sm btn-primary btn-primary"><span class="glyphicon glyphicon-pause"></span> Hold</a>
           <a id="unhold" href="#" onClick="unhold();" class="btn btn-sm btn-primary btn-primary"><span class="glyphicon glyphicon-play"></span> Unhold</a>
-          
-          <input name="extnum" type="text" placeholder="Ext. a transferir" id="extnum" />
+          <input class="form-control" name="extnum" type="text" placeholder="Ext. a transferir" id="extnum" />
           <button id="transfer" href="#" onClick="transfer(this);" class="btn btn-sm btn-default"><span class="glyphicon"></span>Transferir </button>
     
           <input name="num" type="text" placeholder="Numero" id="callnum" />
@@ -43,12 +42,12 @@
 <script>
 $(document).ready(function(e) {
 $('#loading').hide();
+$('.top a, #extnum, #transfer, #callnum, #llamar, #colgar').hide();
 setInterval(function(){
         $.ajax({
           url: "/status",
           beforeSend: function( xhr ) {
             $('#loading').show();
-            $('.top a, #extnum, #transfer, #callnum, #llamar, #colgar').hide();
           },
           success: function(data){
             $('#loading').hide();
@@ -87,7 +86,7 @@ setInterval(function(){
             console.log(error);
           }
         })
-    }, 1000);
+    }, 10000);
 });
 
 function agentlogin() {
